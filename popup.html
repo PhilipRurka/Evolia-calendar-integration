@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Script Injector</title>
+    <style>
+        body { font-family: Arial, sans-serif; width: 350px; padding: 10px; }
+        textarea { width: 100%; height: 80px; }
+        button { margin-top: 5px; }
+        .script-entry { border: 1px solid #ccc; padding: 8px; margin: 5px 0; }
+        .edit-btn, .delete-btn { margin-left: 5px; cursor: pointer; }
+    </style>
+</head>
+<body>
+    <h2>Custom Script Injector</h2>
+    
+    <label for="url">URL Pattern:</label>
+    <input type="text" id="url" placeholder="example.com">
+    
+    <label for="script">Script:</label>
+    <textarea id="script" placeholder="Enter JavaScript"></textarea>
+    
+    <button id="save">Save Script</button>
+
+    <h3>Saved Scripts</h3>
+    <div id="script-list"></div>
+
+    <script src="popup.js"></script>
+</body>
+</html>
